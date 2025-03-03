@@ -29,8 +29,11 @@ class Visit(models.Model):
 
 
 def format_time(delta):
+    seconds_in_hour = 3600
+    minutes_in_hour = 60
+    seconds_in_minutes = 60
     seconds = delta.total_seconds()
-    hours = seconds // 3600
-    minutes = (seconds % 3600) // 60
-    secs = seconds % 60
+    hours = seconds // seconds_in_hour
+    minutes = (seconds % seconds_in_hour) // minutes_in_hour
+    secs = seconds % seconds_in_minutes
     return f'{hours}:{minutes}:{secs}'
