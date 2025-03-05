@@ -6,9 +6,9 @@ from datacenter.models import format_time
 
 
 def storage_information_view(request):
-    visits_at_leaved = Visit.objects.filter(leaved_at=None)
+    not_leaved_visits = Visit.objects.filter(leaved_at=None)
     non_closed_visits = []
-    for visit in visits_at_leaved:
+    for visit in not_leaved_visits:
         non_closed_visits.append({
             'who_entered':
             visit.passcard.owner_name,
