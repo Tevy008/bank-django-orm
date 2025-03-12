@@ -23,6 +23,16 @@ SECRET_KEY = "key_69"
 DEBUG = "false"
 ```
 
+DB_HOST - ссылка на базу данных
+
+DB_PORT - Порт нашего сайта
+
+DB_PASSWORD - Пароль базы данных
+
+SECRET_KEY - Секретный ключ для конкретной установки Django.
+
+DEBUG - логическое значение, которое включает/выключает режим отладки.
+
 ## Запуск
 ```
 python manage.py runserver
