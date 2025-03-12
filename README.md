@@ -21,6 +21,8 @@ DB_PORT = "5269"
 DB_PASSWORD = "qwerty123"
 SECRET_KEY = "key_69"
 DEBUG = "false"
+DB_USER = "reincarnation"
+DB_NAME = "king"
 ```
 
 DB_HOST - ссылка на базу данных
@@ -32,6 +34,10 @@ DB_PASSWORD - Пароль базы данных
 SECRET_KEY - Секретный ключ для конкретной установки Django.
 
 DEBUG - логическое значение, которое включает/выключает режим отладки.
+
+DB_USER - имя пользователя базы данных
+
+DB_NAME - Имя базы данных
 
 ## Запуск
 ```
