@@ -1,7 +1,9 @@
 import os
-import env
-from dotenv import load_dotenv
-load_dotenv()
+from environs import Env
+
+
+env = Env()
+env.read_env()
 
 DATABASES = {
     'default': {
