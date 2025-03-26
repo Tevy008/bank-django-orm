@@ -1,5 +1,5 @@
 import os
-from environs import Env
+from environs  import Env
 
 
 env = Env()
